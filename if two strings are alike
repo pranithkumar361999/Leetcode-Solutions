@@ -1,0 +1,23 @@
+class Solution {
+    public boolean halvesAreAlike(String s) {
+        int vowels1=0,vowels2=0,i,j;
+        int len=s.length();
+        for(i=0;i<len/2;i++){
+            if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'||s.charAt(i)=='A'||s.charAt(i)=='E'||s.charAt(i)=='I'||s.charAt(i)=='O'||s.charAt(i)=='U'){
+                vowels1+=1;
+            }
+        }
+          for(i=len/2;i<len;i++){
+            if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'||s.charAt(i)=='A'||s.charAt(i)=='E'||s.charAt(i)=='I'||s.charAt(i)=='O'||s.charAt(i)=='U'){
+                vowels2+=1;
+            }
+        }
+        if(vowels1==vowels2){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+}
